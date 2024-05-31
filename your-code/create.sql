@@ -11,8 +11,9 @@ CREATE TABLE IF NOT EXISTS `cars`.`cars` (
   `model` VARCHAR(20) NOT NULL,
   `year_` INT NOT NULL,
   `color` VARCHAR(20) NOT NULL,
+  `inventory` varchar(20)NOT null, 
   PRIMARY KEY (`car_id`));
-
+  
 
 -- -----------------------------------------------------
 -- Table `cars`.`costumer`
@@ -75,4 +76,4 @@ CREATE TABLE IF NOT EXISTS `cars`.`invoices` (
     ON UPDATE NO ACTION)
 
 
-
+mysql -u username -p database_name < path/to/seeding.sql
